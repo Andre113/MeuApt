@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -100,10 +101,123 @@
                     <navigationItem key="navigationItem" title="Lista" id="R6Q-Ka-jUq">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="fv4-iX-nEz"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="kSC-op-K6R" kind="show" identifier="goToShot" id="lsd-e9-gLi"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oyi-eT-VOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1060" y="-94"/>
+        </scene>
+        <!--Shot View Controller-->
+        <scene sceneID="Oro-L1-IYJ">
+            <objects>
+                <viewController storyboardIdentifier="shotViewController" id="kSC-op-K6R" customClass="ShotViewController" customModule="MeuApt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rAn-yy-rUf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9Z-jE-KBL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjB-QE-Zho">
+                                        <rect key="frame" x="10" y="336.5" width="355" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="nlx-Bc-xzX"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udT-jm-ONT">
+                                        <rect key="frame" x="10" y="301.5" width="355" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="pNI-Dz-jWZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                        <color key="textColor" red="0.047058823530000002" green="0.68627450980000004" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ODB-nw-kJE">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ODB-nw-kJE" secondAttribute="height" multiplier="4:3" id="1mx-vl-6VB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="95034" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eac-CL-n5C">
+                                        <rect key="frame" x="10" y="501.5" width="355" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="Yho-8d-3DL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="95034" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4w-Hc-JF7">
+                                        <rect key="frame" x="10" y="533.5" width="355" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="4fj-Vl-aMH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/08/2012" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYN-Kp-Eha">
+                                        <rect key="frame" x="10" y="565.5" width="355" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="AcG-jx-zXf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="udT-jm-ONT" firstAttribute="leading" secondItem="m9Z-jE-KBL" secondAttribute="leading" constant="10" id="3AG-XR-PBx"/>
+                                    <constraint firstItem="ODB-nw-kJE" firstAttribute="leading" secondItem="m9Z-jE-KBL" secondAttribute="leading" id="3mS-Ja-Tmj"/>
+                                    <constraint firstAttribute="bottom" secondItem="PYN-Kp-Eha" secondAttribute="bottom" constant="15" id="D2h-rK-GTY"/>
+                                    <constraint firstItem="mjB-QE-Zho" firstAttribute="trailing" secondItem="udT-jm-ONT" secondAttribute="trailing" id="FZd-x5-6Sp"/>
+                                    <constraint firstItem="mjB-QE-Zho" firstAttribute="leading" secondItem="udT-jm-ONT" secondAttribute="leading" id="K1m-Hc-uel"/>
+                                    <constraint firstItem="Eac-CL-n5C" firstAttribute="trailing" secondItem="udT-jm-ONT" secondAttribute="trailing" id="Lm9-tF-wdo"/>
+                                    <constraint firstAttribute="trailing" secondItem="udT-jm-ONT" secondAttribute="trailing" constant="10" id="Res-AT-N5W"/>
+                                    <constraint firstItem="Eac-CL-n5C" firstAttribute="top" secondItem="mjB-QE-Zho" secondAttribute="bottom" constant="15" id="U73-C3-AU8"/>
+                                    <constraint firstItem="O4w-Hc-JF7" firstAttribute="trailing" secondItem="udT-jm-ONT" secondAttribute="trailing" id="UB4-Ko-AUK"/>
+                                    <constraint firstItem="PYN-Kp-Eha" firstAttribute="leading" secondItem="udT-jm-ONT" secondAttribute="leading" id="Wvl-gE-Xix"/>
+                                    <constraint firstItem="PYN-Kp-Eha" firstAttribute="trailing" secondItem="udT-jm-ONT" secondAttribute="trailing" id="YA6-jX-FfP"/>
+                                    <constraint firstItem="mjB-QE-Zho" firstAttribute="top" secondItem="udT-jm-ONT" secondAttribute="bottom" constant="10" id="YvF-7N-R5a"/>
+                                    <constraint firstItem="O4w-Hc-JF7" firstAttribute="leading" secondItem="udT-jm-ONT" secondAttribute="leading" id="ZmB-8u-nw9"/>
+                                    <constraint firstItem="ODB-nw-kJE" firstAttribute="top" secondItem="m9Z-jE-KBL" secondAttribute="top" id="bIO-a0-cL5"/>
+                                    <constraint firstAttribute="trailing" secondItem="ODB-nw-kJE" secondAttribute="trailing" id="fIJ-bT-N7V"/>
+                                    <constraint firstItem="O4w-Hc-JF7" firstAttribute="top" secondItem="Eac-CL-n5C" secondAttribute="bottom" constant="10" id="kKz-8n-447"/>
+                                    <constraint firstItem="PYN-Kp-Eha" firstAttribute="top" secondItem="O4w-Hc-JF7" secondAttribute="bottom" constant="10" id="nh4-Qn-dcz"/>
+                                    <constraint firstItem="udT-jm-ONT" firstAttribute="top" secondItem="ODB-nw-kJE" secondAttribute="bottom" constant="20" id="u8b-Qn-XcU"/>
+                                    <constraint firstItem="Eac-CL-n5C" firstAttribute="leading" secondItem="udT-jm-ONT" secondAttribute="leading" id="wn8-IX-bgu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m9Z-jE-KBL" firstAttribute="leading" secondItem="b9m-kc-EDw" secondAttribute="leading" id="PEQ-x6-FmB"/>
+                            <constraint firstItem="m9Z-jE-KBL" firstAttribute="bottom" secondItem="b9m-kc-EDw" secondAttribute="bottom" id="Qz6-k8-jaU"/>
+                            <constraint firstItem="udT-jm-ONT" firstAttribute="width" secondItem="rAn-yy-rUf" secondAttribute="width" constant="-20" id="e8E-Gb-bpU"/>
+                            <constraint firstItem="m9Z-jE-KBL" firstAttribute="top" secondItem="b9m-kc-EDw" secondAttribute="top" id="fBe-q7-WEr"/>
+                            <constraint firstItem="m9Z-jE-KBL" firstAttribute="trailing" secondItem="b9m-kc-EDw" secondAttribute="trailing" id="ztR-TS-rmy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b9m-kc-EDw"/>
+                    </view>
+                    <connections>
+                        <outlet property="commentsCountLabel" destination="O4w-Hc-JF7" id="qaz-7U-CBy"/>
+                        <outlet property="createdAtLabel" destination="PYN-Kp-Eha" id="pmQ-Xu-zxu"/>
+                        <outlet property="descriptionTextView" destination="mjB-QE-Zho" id="0BH-ml-W6g"/>
+                        <outlet property="imageView" destination="ODB-nw-kJE" id="tba-r7-YCx"/>
+                        <outlet property="titleLabel" destination="udT-jm-ONT" id="rXw-Un-fun"/>
+                        <outlet property="viewsCountLabel" destination="Eac-CL-n5C" id="RtS-9R-eJp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aln-id-XZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="-94.002998500749626"/>
         </scene>
     </scenes>
 </document>

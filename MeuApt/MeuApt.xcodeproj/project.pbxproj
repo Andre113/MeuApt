@@ -27,6 +27,7 @@
 		24B5FD821FBE7BC100C9BEBE /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5FD811FBE7BC100C9BEBE /* StringExtension.swift */; };
 		24B5FD841FBE7BE800C9BEBE /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5FD831FBE7BE800C9BEBE /* DictionaryExtension.swift */; };
 		24B5FD861FBE82F000C9BEBE /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5FD851FBE82F000C9BEBE /* UIImageViewExtension.swift */; };
+		24B5FD891FBE87F100C9BEBE /* ShotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5FD881FBE87F100C9BEBE /* ShotViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		24B5FD811FBE7BC100C9BEBE /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		24B5FD831FBE7BE800C9BEBE /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		24B5FD851FBE82F000C9BEBE /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		24B5FD881FBE87F100C9BEBE /* ShotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +112,10 @@
 		24B5FD571FBE68AB00C9BEBE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				24B5FD721FBE720100C9BEBE /* Lista */,
-				24B5FD711FBE71FB00C9BEBE /* Home */,
 				24B5FD6E1FBE717600C9BEBE /* Default */,
+				24B5FD711FBE71FB00C9BEBE /* Home */,
+				24B5FD721FBE720100C9BEBE /* Lista */,
+				24B5FD871FBE87E200C9BEBE /* Shot */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +206,14 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		24B5FD871FBE87E200C9BEBE /* Shot */ = {
+			isa = PBXGroup;
+			children = (
+				24B5FD881FBE87F100C9BEBE /* ShotViewController.swift */,
+			);
+			path = Shot;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B5FD891FBE87F100C9BEBE /* ShotViewController.swift in Sources */,
 				24B5FD4A1FBE687C00C9BEBE /* MeuApt.xcdatamodeld in Sources */,
 				24B5FD7F1FBE76FF00C9BEBE /* ShotManager.swift in Sources */,
 				24B5FD421FBE687C00C9BEBE /* AppDelegate.swift in Sources */,

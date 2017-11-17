@@ -24,7 +24,6 @@ class Shot: NSObject {
     
     //    MARK: - Set
     func setDate(dateString: String){
-        print(dateString)
         let df = DateFormatter()
         df.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
         

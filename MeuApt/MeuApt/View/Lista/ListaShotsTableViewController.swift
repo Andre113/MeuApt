@@ -78,6 +78,8 @@ class ListaShotsTableViewController: DefaultTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        self.goToShot(shot: self.shots[indexPath.row])
     }
     
     //MARK: - Alert
@@ -87,5 +89,14 @@ class ListaShotsTableViewController: DefaultTableViewController {
         alertController.addAction(UIAlertAction(title: "Fechar", style: .default, handler: nil))
         
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+//    MARK - Navigation
+    func goToShot(shot: Shot){
+        let st = UIStoryboard(name: "Home", bundle: nil)
+        let shotView = st.instantiateViewController(withIdentifier: "shotViewController") as! ShotViewController
+        shotView.shot = shot
+        
+        self.navigationController?.show(shotView, sender: self)
     }
 }
