@@ -50,13 +50,14 @@ class ShotManager: NSObject {
         
         shot.id = shotJson["id"] as? Int ?? 0
         shot.title = shotJson["title"] as? String ?? ""
-        shot.image = shotJson["image"] as? String ?? ""
         shot.shotDescription = shotJson["description"] as? String ?? ""
         shot.viewsCount = shotJson["views_count"] as? Int ?? 0
         shot.commentsCount = shotJson["comments_count"] as? Int ?? 00
         
         let createdAt = shotJson["created_at"] as? String ?? ""
         shot.setDate(dateString: createdAt)
+        
+        shot.images = shotJson["images"] as? [String: String] ?? [:]
         
         return shot
     }

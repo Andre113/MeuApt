@@ -11,14 +11,23 @@ import UIKit
 class Shot: NSObject {
     var id: Int! = 0
     var title: String! = ""
-    var image: String! = ""
     var shotDescription: String! = ""
     var viewsCount: Int! = 0
     var commentsCount: Int! = 0
-    var createdAt: Date! = Date()
+    var shotCreatedAt: Date! = Date()
+    
+    var images: [String: String] = [
+        "hidpi": "",
+        "normal": "",
+        "teaser": ""
+    ]
     
     //    MARK: - Set
     func setDate(dateString: String){
+        print(dateString)
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
         
+        self.shotCreatedAt = df.date(from: dateString)
     }
 }

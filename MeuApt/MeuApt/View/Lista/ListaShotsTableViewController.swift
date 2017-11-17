@@ -72,6 +72,14 @@ class ListaShotsTableViewController: DefaultTableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     //MARK: - Alert
     func showAlert(mensagem: String){
         let alertController = UIAlertController(title: "MeuApt", message: mensagem, preferredStyle: UIAlertControllerStyle.alert)
