@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24B5FD421FBE687C00C9BEBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5FD411FBE687C00C9BEBE /* AppDelegate.swift */; };
+		24B5FD4A1FBE687C00C9BEBE /* MeuApt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24B5FD481FBE687C00C9BEBE /* MeuApt.xcdatamodeld */; };
+		24B5FD4C1FBE687C00C9BEBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B5FD4B1FBE687C00C9BEBE /* Assets.xcassets */; };
+		24B5FD4F1FBE687C00C9BEBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B5FD4D1FBE687C00C9BEBE /* LaunchScreen.storyboard */; };
+		24B5FD5B1FBE68EA00C9BEBE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B5FD5A1FBE68EA00C9BEBE /* Home.storyboard */; };
+		24B5FD5D1FBE697E00C9BEBE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5FD5C1FBE697E00C9BEBE /* HomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24B5FD3E1FBE687C00C9BEBE /* MeuApt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeuApt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B5FD411FBE687C00C9BEBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24B5FD491FBE687C00C9BEBE /* MeuApt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeuApt.xcdatamodel; sourceTree = "<group>"; };
+		24B5FD4B1FBE687C00C9BEBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24B5FD4E1FBE687C00C9BEBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24B5FD501FBE687C00C9BEBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24B5FD5A1FBE68EA00C9BEBE /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		24B5FD5C1FBE697E00C9BEBE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24B5FD3B1FBE687C00C9BEBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24B5FD351FBE687C00C9BEBE = {
+			isa = PBXGroup;
+			children = (
+				24B5FD401FBE687C00C9BEBE /* MeuApt */,
+				24B5FD3F1FBE687C00C9BEBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24B5FD3F1FBE687C00C9BEBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24B5FD3E1FBE687C00C9BEBE /* MeuApt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24B5FD401FBE687C00C9BEBE /* MeuApt */ = {
+			isa = PBXGroup;
+			children = (
+				24B5FD571FBE68AB00C9BEBE /* Views */,
+				24B5FD561FBE68A300C9BEBE /* Storyboard */,
+				24B5FD5E1FBE699E00C9BEBE /* Supporting Files */,
+			);
+			path = MeuApt;
+			sourceTree = "<group>";
+		};
+		24B5FD561FBE68A300C9BEBE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				24B5FD5A1FBE68EA00C9BEBE /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		24B5FD571FBE68AB00C9BEBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24B5FD5C1FBE697E00C9BEBE /* HomeViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24B5FD5E1FBE699E00C9BEBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24B5FD4B1FBE687C00C9BEBE /* Assets.xcassets */,
+				24B5FD481FBE687C00C9BEBE /* MeuApt.xcdatamodeld */,
+				24B5FD501FBE687C00C9BEBE /* Info.plist */,
+				24B5FD4D1FBE687C00C9BEBE /* LaunchScreen.storyboard */,
+				24B5FD411FBE687C00C9BEBE /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24B5FD3D1FBE687C00C9BEBE /* MeuApt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24B5FD531FBE687C00C9BEBE /* Build configuration list for PBXNativeTarget "MeuApt" */;
+			buildPhases = (
+				24B5FD3A1FBE687C00C9BEBE /* Sources */,
+				24B5FD3B1FBE687C00C9BEBE /* Frameworks */,
+				24B5FD3C1FBE687C00C9BEBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeuApt;
+			productName = MeuApt;
+			productReference = 24B5FD3E1FBE687C00C9BEBE /* MeuApt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24B5FD361FBE687C00C9BEBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = AndreOta;
+				TargetAttributes = {
+					24B5FD3D1FBE687C00C9BEBE = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 24B5FD391FBE687C00C9BEBE /* Build configuration list for PBXProject "MeuApt" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24B5FD351FBE687C00C9BEBE;
+			productRefGroup = 24B5FD3F1FBE687C00C9BEBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24B5FD3D1FBE687C00C9BEBE /* MeuApt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24B5FD3C1FBE687C00C9BEBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B5FD5B1FBE68EA00C9BEBE /* Home.storyboard in Resources */,
+				24B5FD4F1FBE687C00C9BEBE /* LaunchScreen.storyboard in Resources */,
+				24B5FD4C1FBE687C00C9BEBE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24B5FD3A1FBE687C00C9BEBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B5FD4A1FBE687C00C9BEBE /* MeuApt.xcdatamodeld in Sources */,
+				24B5FD421FBE687C00C9BEBE /* AppDelegate.swift in Sources */,
+				24B5FD5D1FBE697E00C9BEBE /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24B5FD4D1FBE687C00C9BEBE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24B5FD4E1FBE687C00C9BEBE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24B5FD511FBE687C00C9BEBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24B5FD521FBE687C00C9BEBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24B5FD541FBE687C00C9BEBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TF42CLK79T;
+				INFOPLIST_FILE = MeuApt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.andre.MeuApt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24B5FD551FBE687C00C9BEBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TF42CLK79T;
+				INFOPLIST_FILE = MeuApt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.andre.MeuApt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24B5FD391FBE687C00C9BEBE /* Build configuration list for PBXProject "MeuApt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24B5FD511FBE687C00C9BEBE /* Debug */,
+				24B5FD521FBE687C00C9BEBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24B5FD531FBE687C00C9BEBE /* Build configuration list for PBXNativeTarget "MeuApt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24B5FD541FBE687C00C9BEBE /* Debug */,
+				24B5FD551FBE687C00C9BEBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		24B5FD481FBE687C00C9BEBE /* MeuApt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				24B5FD491FBE687C00C9BEBE /* MeuApt.xcdatamodel */,
+			);
+			currentVersion = 24B5FD491FBE687C00C9BEBE /* MeuApt.xcdatamodel */;
+			path = MeuApt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 24B5FD361FBE687C00C9BEBE /* Project object */;
+}
