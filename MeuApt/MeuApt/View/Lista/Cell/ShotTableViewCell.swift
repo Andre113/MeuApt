@@ -24,7 +24,7 @@ class ShotTableViewCell: UITableViewCell {
     //    MARK: - Set
     func setShot(shot: Shot){
         self.tituloLabel.text = shot.title
-        self.viewsCountLabel.text = "\(shot.viewsCount!)"
+        self.viewsCountLabel.text = "Visualizações: \(shot.viewsCount!)"
         
         let df = DateFormatter()
         df.dateFormat = "dd/MM/yyyy"

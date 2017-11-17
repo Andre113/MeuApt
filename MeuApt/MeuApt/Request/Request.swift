@@ -22,7 +22,7 @@ class Request: NSObject {
             var erro: NSError?
             guard let data = data, requestError == nil else {
                 //Sem conexão
-                let erro = NSError()
+                erro = NSError()
                 callback(nil, erro)
                 return
             }

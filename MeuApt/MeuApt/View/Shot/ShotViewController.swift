@@ -28,12 +28,15 @@ class ShotViewController: UIViewController {
     //    MARK: - Config
     func configInfo(){
         self.titleLabel.text = self.shot.title
-        self.viewsCountLabel.text = "\(shot.viewsCount!)"
-        self.commentsCountLabel.text = "\(shot.commentsCount!)"
-        
+        self.viewsCountLabel.text = "Visualizações: \(shot.viewsCount!)"
+        self.commentsCountLabel.text = "Comentários: \(shot.commentsCount!)"
         
         do {
-            let attrString = try NSAttributedString(data: self.shot.shotDescription.data(using: String.Encoding.unicode, allowLossyConversion: true)!, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil)
+            let attrString = try NSMutableAttributedString(data: self.shot.shotDescription.data(using: String.Encoding.unicode, allowLossyConversion: true)!, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil)
+            
+            let range = (attrString.string as NSString).range(of: attrString.string)
+            
+            attrString.addAttribute(NSAttributedStringKey.font, value: UIFont(name: "Courier", size: 17)!, range: range)
             
             self.descriptionTextView.attributedText = attrString
         } catch {
@@ -42,7 +45,7 @@ class ShotViewController: UIViewController {
         
         let df = DateFormatter()
         df.dateFormat = "dd/MM/yyyy"
-        self.createdAtLabel.text = "\(df.string(from: shot.shotCreatedAt))"
+        self.createdAtLabel.text = "Criado em: \(df.string(from: shot.shotCreatedAt))"
         
         if let url = URL(string: shot.images["hidpi"]!){
             self.imageView.downloadImage(url: url)
