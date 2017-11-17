@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LBw-2M-Q49">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Courier.ttc">
+            <string>Courier</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="ieZ-st-Xqg">
@@ -33,16 +38,72 @@
                     <view key="view" contentMode="scaleToFill" id="znx-fa-JK0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ut-hW-fVT">
+                                <rect key="frame" x="112" y="313" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.047058823530000002" green="0.68627450980000004" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Hqd-fy-T8n"/>
+                                    <constraint firstAttribute="height" constant="40" id="eGj-2c-Noh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                <state key="normal" title="Iniciar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="iniciarButtonTouched:" destination="lmj-kQ-FOV" eventType="touchUpInside" id="Nux-pc-zI4"/>
+                                    <segue destination="hhY-TO-pJe" kind="show" id="rQM-Nw-RFj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Ut-hW-fVT" firstAttribute="centerY" secondItem="znx-fa-JK0" secondAttribute="centerY" id="4Gx-Ug-ztN"/>
+                            <constraint firstItem="4Ut-hW-fVT" firstAttribute="centerX" secondItem="znx-fa-JK0" secondAttribute="centerX" id="MTt-xZ-Y96"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Nfl-ar-eUB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="nSX-nO-pIy">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="rUv-Jj-5VH"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="iniciarButton" destination="4Ut-hW-fVT" id="WES-1Z-D1P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KT2-Wo-lpN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="236" y="-94"/>
+        </scene>
+        <!--Lista-->
+        <scene sceneID="1jv-Xa-c5t">
+            <objects>
+                <tableViewController id="hhY-TO-pJe" customClass="ListaShotsTableViewController" customModule="MeuApt" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NnZ-du-DPj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HsU-Ql-OCI">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HsU-Ql-OCI" id="hdq-Yt-aMs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hhY-TO-pJe" id="4Ru-YK-626"/>
+                            <outlet property="delegate" destination="hhY-TO-pJe" id="wqb-f4-hcv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lista" id="R6Q-Ka-jUq">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="fv4-iX-nEz"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oyi-eT-VOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="-94"/>
         </scene>
     </scenes>
 </document>
